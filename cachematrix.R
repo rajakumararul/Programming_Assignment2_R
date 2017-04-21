@@ -16,7 +16,6 @@ i <- NULL
 }
 }
 
-
 ## Write a short comment describing this function
 
 cacheSolve <- function(x, ...) {
@@ -29,6 +28,6 @@ cacheSolve <- function(x, ...) {
     m <- x$get()
     i <- solve(m, ...)
     x$setinverse(i)
-    i
+    return (i)
 }
 }
